@@ -30,8 +30,7 @@ Acceuil
 
 <!-- header -->
 <?php
-	require('hader.php')
-?>	
+    require 'hader.php'; ?>	
 <!-- Page Content -->
 <div class="container"> 
   
@@ -42,7 +41,7 @@ Acceuil
     <div class="col-lg-6 portfolio-item">
       <div class="card h-100"> 
         <div class="card-body">
-          <h4 class="card-title"> <a>Chapitre V</a> </h4>
+          <h4 class="card-title"> <a>$_POST['name']</a> </h4>
           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitaedolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae</p>
 <button type="button" class="btn btn-primary">lire la suite</button>
         </div>
@@ -114,8 +113,7 @@ Acceuil
 </div>
 <!-- /.footer--> 
 <?php
-		require('footer.php')
-?>
+        require 'footer.php'; ?>
 
 <!-- Bootstrap core JavaScript --> 
 <script src="../vendor/jquery/jquery.min.js"></script> 

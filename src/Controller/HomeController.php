@@ -2,14 +2,15 @@
 
 namespace App\Controller;
 
-use App\model\PostManager;
+use App\Model\PostManager;
 
 class HomeController
 {
-    public function homePageAction()
+    public static function homePageAction()
     {
         $postManager = new PostManager();
         $posts = $postManager->getPost1();
-        require 'src/view/home.php';
+        require '../src/view/home.php';
     }
 }
+//HomeController::homePageAction();

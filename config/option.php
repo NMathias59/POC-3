@@ -1,7 +1,8 @@
 <?php
 
-    $config = array(
-        dbUri => 'mysql:host=localhost;dbname=test;charset=utf8',
-        dbUser => 'root',
-        dbPassword => '',
-    );
+// [] = array
+    $config = [
+        'dbUri' => 'mysql:host=localhost;dbname=projet n°3;charset=utf8',
+        'dbUser' => 'root',
+        'dbPassword' => 'root',
+    ];

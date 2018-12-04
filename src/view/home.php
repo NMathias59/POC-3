@@ -8,25 +8,27 @@ Acceuil
 </title>
 
 <!-- Bootstrap core CSS -->
-   <link href="../../public/css/bootstrap.min.css" rel="stylesheet">
+   <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="../../public/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <!-- Plugin CSS -->
-	 <link href="../../public/vendor/magnific-popup/jquery.magnific-popup.js" rel="stylesheet" type="text/css">
     <!-- Custom styles for this template -->
-    <link href="../../public/css/freelancer.min.css" rel="stylesheet">
+    <link href="css/freelancer.min.css" rel="stylesheet">
 
 
-<link href="../public/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
 <!-- Custom styles for this template -->
-<link href="../../public/css/modern-business.css" rel="stylesheet">
+<link href="css/modern-business.css" rel="stylesheet">
+
 </head>
 
 <body>
+<!-- conection a la base de données pour les test php -->
+
+
 
 <!-- header -->
 <?php
@@ -41,7 +43,7 @@ Acceuil
     <div class="col-lg-6 portfolio-item">
       <div class="card h-100"> 
         <div class="card-body">
-          <h4 class="card-title"> <a><?php echo $posts[0]->name; ?></a> </h4>
+          <h4 class="card-title"> <a><?php $_post[0]->name; ?></a> </h4>
           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitaedolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae</p>
 <button type="button" class="btn btn-primary">lire la suite</button>
         </div>
@@ -116,6 +118,6 @@ Acceuil
         require 'footer.php'; ?>
 
 <!-- Bootstrap core JavaScript --> 
-<script src="../vendor/jquery/jquery.min.js"></script> 
-<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/jquery/jquery.min.js"></script> 
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>

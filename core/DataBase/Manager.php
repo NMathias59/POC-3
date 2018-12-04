@@ -2,9 +2,11 @@
 
 namespace Core\DataBase;
 
+use PDO;
+
 abstract class Manager
 {
-    private static $db = null;
+    protected static $dataBase = null;
 
     public function __construct()
     {
@@ -13,8 +15,8 @@ abstract class Manager
 
     private static function dbConnect()
     {
-        if (self::$db === null) {
-            self::$db = new PDO('mysql:host=localhost;dbname=projetn°3;charset=utf8', 'root', 'root');
+        if (self::$dataBase === null) {
+            self::$dataBase = new PDO('mysql:host=localhost;dbname=projet;charset=utf8', 'root', 'root');
         }
     }
 }

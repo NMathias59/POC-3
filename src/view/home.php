@@ -38,18 +38,25 @@ Acceuil
   
   <!-- Page Heading/Breadcrumbs -->
   <h1 class="mt-4 mb-3">ACCEUIL </h1>
-	
-  <div class="row">
+  <?php for ($i = 0; $i < 2; ++$i) {
+        echo $posts[$i]['name'];
+        echo $posts[$i]['createdAt'];
+        echo $posts[$i]['content'];
+    } ?>
+  <!--<div class="row">
     <div class="col-lg-6 portfolio-item">
       <div class="card h-100"> 
         <div class="card-body">
-          <h4 class="card-title"> <a><?php $_post[0]->name; ?></a> </h4>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitaedolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae</p>
+          <h4 class="card-title"> <a><?php echo $posts[0]['name']; ?></a> </h4>
+          <span> <?php echo $posts[0]['createdAt']; ?> </span>
+        <br/>
+        <br/>
+          <p class="card-text"><?php echo $posts[0]['content']; ?> </p>
 <button type="button" class="btn btn-primary">lire la suite</button>
         </div>
       </div>
-    </div>
-    <div class="col-lg-6 portfolio-item">
+    </div>-->
+    <!--<div class="col-lg-6 portfolio-item">
       <div class="card h-100"> 
         <div class="card-body">
           <h4 class="card-title"> <a>Chapitre IV</a> </h4>
@@ -57,61 +64,59 @@ Acceuil
 <button type="button" class="btn btn-primary">lire la suite</button>
         </div>
       </div>
-    </div>
+    </div>-->
   </div>
   <div> 
-    <!-- Project One -->
+  <?php for ($i = 2; $i <= 5; ++$i) {
+        echo $posts[$i]['name'];
+        echo $posts[$i]['createdAt'];
+        echo $posts[$i]['content'];
+    } ?>
+
+    <!-- Project One 
     <div class="row">
       <div>
         <h3>Chapitre III</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
         <a class="btn btn-primary" href="#">Lire la suite <span class="glyphicon glyphicon-chevron-right"></span> </a> </div>
     </div>
-    <!-- /.row -->
+    <!-- /.row 
     
     <hr>
     
-    <!-- Project Two -->
+    <!-- Project Two 
      <div class="row">
       <div>
         <h3>Chapitre II</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
         <a class="btn btn-primary" href="#">Lire la suite <span class="glyphicon glyphicon-chevron-right"></span> </a> </div>
     </div>
-    <!-- /.row -->
+    <!-- /.row 
     
     <hr>
     
-    <!-- Project Three -->
+    <!-- Project Three 
      <div class="row">
       <div>
         <h3>Chapitre I</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
         <a class="btn btn-primary" href="#">Lire la suite <span class="glyphicon glyphicon-chevron-right"></span> </a> </div>
     </div>
-    <!-- /.row -->
+    <!-- /.row 
     
     <hr>
     
-    <!-- Project Four -->
+    <!-- Project Four 
      <div class="row">
       <div>
         <h3>Introduction</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
         <a class="btn btn-primary" href="#">Lire la suite <span class="glyphicon glyphicon-chevron-right"></span> </a> </div>
     </div>
-    <!-- /.row --> 
+    <!-- /.row 
   </div>
   <hr>
-  
-  <!-- Pagination -->
-  <ul class="pagination justify-content-center">
-    <li class="page-item"> <a class="page-link" href="#" aria-label="Previous"> <span aria-hidden="true">&laquo;</span> <span class="sr-only">Previous</span> </a> </li>
-    <li class="page-item"> <a class="page-link" href="#">1</a> </li>
-    <li class="page-item"> <a class="page-link" href="#">2</a> </li>
-    <li class="page-item"> <a class="page-link" href="#">3</a> </li>
-    <li class="page-item"> <a class="page-link" href="#" aria-label="Next"> <span aria-hidden="true">&raquo;</span> <span class="sr-only">Next</span> </a> </li>
-  </ul>
+-->
 </div>
 <!-- /.footer--> 
 <?php

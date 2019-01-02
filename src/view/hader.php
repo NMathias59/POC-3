@@ -8,13 +8,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="home.php">Acceuil</a>
+              <a class="nav-link" href="home">Acceuil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="chapitres.php">Chapitres</a>
+              <a class="nav-link" href="chapitres">Chapitres</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="autobiographie.php">Autobiographie</a>
+              <a class="nav-link" href="autobiographie">Autobiographie</a>
             </li>
            
           </ul>

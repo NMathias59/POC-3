@@ -8,7 +8,14 @@ class PostManager extends Manager
 {
     public function getPost1()
     {
-        $req = self::$dataBase->query('SELECT id, name, createdAt, content  FROM Post ORDER BY createdAt DESC LIMIT 0, 6');
+        $req = self::$dataBase->query('SELECT id, `name`, createdAt, content  FROM Post ORDER BY createdAt DESC LIMIT 0, 6');
+
+        return $req->fetchAll();
+    }
+
+    public function getPost2()
+    {
+        $req = self::$dataBase->query('SELECT id, `name`, createdAt, content  FROM Post ORDER BY createdAt DESC ');
 
         return $req->fetchAll();
     }

@@ -1,7 +1,9 @@
 <?php
- $routes = [
+ $routes =
+ [
     [
         'uri' => '/',
+        'uri' => '/home',
         'controller' => 'Home',
         'action' => 'homePage',
         'name' => 'home',
@@ -14,4 +16,18 @@
         'name' => 'chapitres',
         'method' => 'GET',
     ],
-    ];
+    [
+        'uri' => '/Autobiographie',
+        'controller' => 'Autobio',
+        'action' => 'autobiographiePage',
+        'name' => 'autobigraphie',
+        'method' => 'GET',
+    ],
+    [
+        'uri' => '/connection',
+        'controller' => 'Connection',
+        'action' => 'connectionPage',
+        'name' => 'Connection',
+        'method' => 'GET',
+    ],
+];

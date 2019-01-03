@@ -35,7 +35,8 @@ Acceuil
     require 'hader.php'; ?>	
 <!-- Page Content -->
 <div class="container"> 
-  
+  <br>
+  <br>
   <!-- Page Heading/Breadcrumbs -->
   <h1 class="mt-4 mb-3">ACCEUIL </h1>
   <div class="row">
@@ -75,6 +76,7 @@ Acceuil
     </div>
 </div>
 </div>
+<br>
 <!-- /.footer--> 
 <?php
         require 'footer.php'; ?>

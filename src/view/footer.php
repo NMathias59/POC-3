@@ -17,7 +17,7 @@
           <div class="col-md-4 mb-5 mb-lg-0">
             <h4 class="text-uppercase mb-4">Administration</h4> 
                         <p class="lead mb-0">
-              <a href="connection">Connection</a></p>
+              <a href="connection">connection</a></p>
           </div>
           <div class="col-md-4 mb-5 mb-lg-0">
             <h4 class="text-uppercase mb-4">Around the Web</h4>
@@ -52,7 +52,7 @@
           <div class="col-md-4">
             <h4 class="text-uppercase mb-4">ME CONTACTER</h4>
             <p class="lead mb-0">
-              <a href="Contact.php">contact</a>.</p>
+              <a href="contact">contact</a></p>
           </div>
         </div>
       </div>

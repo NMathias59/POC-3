@@ -20,10 +20,10 @@
     <link href="public/css/freelancer.min.css" rel="stylesheet">
 
 
-<link href="public/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="../public/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
 <!-- Custom styles for this template -->
-<link href="public/css/modern-business.css" rel="stylesheet">
+<link href="../public/css/modern-business.css" rel="stylesheet">
 </head>
 
 <body>
@@ -32,9 +32,8 @@
 	<?php
     require 'hader.php'; ?>
 
-	<!-- Page Content -->Ò
-	<br>
-	<br>
+	<!-- Page Content -->
+<main>
 	<div class="container">
 		<!-- Page Heading/Breadcrumbs -->
 		<h1 class="mt-4 mb-3">Chapitres
@@ -57,7 +56,7 @@
                 			<a href="#"><?= $post['name']; ?></a>
               			</h4>
 						<p class="card-text"><?= $post['content']; ?></p>
-						<button type="button" class="btn btn-primary"></button>
+						<button type="button" class="btn btn-primary">voir plus</button>
 					</div>
 				</div>
 			</div>
@@ -95,6 +94,7 @@
 		</ul>
 	</div>
 </div>
+</main>
 			<!-- /.footer-->
 		<?php
         require 'footer.php'; ?>

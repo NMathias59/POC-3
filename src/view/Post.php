@@ -4,30 +4,29 @@
 	<meta charset="utf-8">
 	<title>Document sans titre</title>
 	 <!-- Bootstrap core CSS -->
-	 <link href="../../public/css/bootstrap.min.css" rel="stylesheet">
+	 <link href="../public/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Custom fonts for this template -->
-<link href="../../public/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+<link href="../public/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 <!-- Plugin CSS -->
-<link href="../../public/vendor/magnific-popup/jquery.magnific-popup.js" rel="stylesheet" type="text/css">
+<link href="../public/vendor/magnific-popup/jquery.magnific-popup.js" rel="stylesheet" type="text/css">
 <!-- Custom styles for this template -->
-<link href="../../public/css/freelancer.min.css" rel="stylesheet">
+<link href="../public/css/freelancer.min.css" rel="stylesheet">
 
 
 <link href="../public/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
 <!-- Custom styles for this template -->
-<link href="../../public/css/modern-business.css" rel="stylesheet">
+<link href="../public/css/modern-business.css" rel="stylesheet">
 </head>
 
 <body>
 
 	<!-- header -->
 	<?php
-	require( 'hader.php' )
-	?>
+    require 'hader.php'; ?>
 
 	<!-- Page Content -->
 	<div class="container">
@@ -48,9 +47,7 @@
 			<!-- Post Content Column -->
 			<div class="col-lg-12 text">
 
-				<!-- Preview Image -->
-				<img class="img-fluid rounded" src="../public/images/mt-mckinley-reflects-in-a-small-tundra-pond-with-lily-pads--sunset-in-denali-national-park--alaska--540781369-596444163df78cdc68c071ff.jpg" alt="">
-
+		
 				<hr>
 
 				<!-- Date/Time -->
@@ -80,7 +77,7 @@
 
 				<!-- Comments Form -->
 				<div class="card my-4">
-					<h5 class="card-header">Leave a Comment:</h5>
+					<h5 class="card-header">Mon commentaire :</h5>
 					<div class="card-body">
 						<div class="form-group">
 							<input class="form-control" id="name" type="text" placeholder="Nom *" required="required" data-validation-required-message="Please enter your name.">
@@ -88,7 +85,7 @@
 						</div>
 						<form>
 							<div class="form-group">
-								<textarea class="form-control" rows="3"></textarea>
+								<textarea class="form-control" rows="3" placeholder="Text *"></textarea>
 							</div>
 							<button type="submit" class="btn btn-primary">Submit</button>
 						</form>
@@ -96,22 +93,32 @@
 				</div>
 
 				<!-- Single Comment -->
+
 				<div class="media mb-4">
-					<img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
-					<div class="media-body">
-						<h5 class="mt-0">Commenter Name</h5> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+					<div class="media-body border border-success rounded">
+						<div class=" col-lg">
+							<h5 class="mt-0">Commenter Name</h5> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+								<div>	
+									<button type="button" class="btn btn-link">commenter</button>
+									<button type="button" class="btn btn-link">signaler</button>
+								</div>
+						<div class="media mb-4">
+							<div class="media-body border border-success rounded">
+								<div class=" col-lg">
+									<h5 class="mt-0">Commenter Name</h5> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+										<div>
+											<button type="button" class="btn btn-link">commenter</button>	
+											<button type="button" class="btn btn-link">signaler</button>
+										</div>
+								</div>
+							</div>
+							</div>
+						</div>	
 					</div>
 				</div>
 
-				<!-- Comment with nested comments -->
-				<div class="media mb-4">
-					<img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
-					<div class="media-body">
-						<h5 class="mt-0">Commenter Name</h5> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-
-
-					</div>
-				</div>
+				
+						
 
 			</div>
 
@@ -125,17 +132,16 @@
 
 	<!-- /.footer-->
 	<?php
-	require( 'footer.php' )
-	?>
+    require 'footer.php'; ?>
 	<!-- /.container -->
 	</footer>
 
 	<!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
 </body>
 </html>

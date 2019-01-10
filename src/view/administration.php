@@ -13,18 +13,18 @@
 
     <!-- Bootstrap core CSS-->
     
-    <link href="../../public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../public/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template-->
-    <link href="../../public/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="../public/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
     <!-- Page level plugin CSS-->
     <link href="../vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
-    <link href="../../public/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+    <link href="../public/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
 
     <!-- Custom styles for this template-->
     <link href="../css/sb-admin.css" rel="stylesheet">
-    <link href="../../public/css/sb-admin.css" rel="stylesheet">
+    <link href="../public/css/sb-admin.css" rel="stylesheet">
 
   </head>
 
@@ -32,7 +32,7 @@
 
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-      <a class="navbar-brand mr-1" href="index.html">Administration :</a>
+      <a class="navbar-brand mr-1" href="administration">Administration :</a>
 
       <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
         <i class="fas fa-bars"></i>
@@ -71,10 +71,10 @@
             <span>Pages</span>
           </a>
           <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <a class="dropdown-item" href="src/../message.php">Messages :</a>
-            <a class="dropdown-item" href="src/../ListePost.php">Post :</a>
-            <a class="dropdown-item" href="src/../New_Post.php">New Post :</a>
-			      <a class="dropdown-item" href="src/../Commentaire.php">Commentaires :</a>
+            <a class="dropdown-item" href="message">Messages :</a>
+            <a class="dropdown-item" href="listePost">Post :</a>
+            <a class="dropdown-item" href="newPost">New Post :</a>
+			      <a class="dropdown-item" href="commentaires">Commentaires :</a>
           </div>
 		  </li>
       </ul>
@@ -101,7 +101,7 @@
                   </div>
                   <div class="mr-5">Messages</div>
                 </div>
-                <a class="card-footer text-white clearfix small z-1" href="src/../message.php">
+                <a class="card-footer text-white clearfix small z-1" href="message">
                   <span class="float-left">voir plus</span>
                   <span class="float-right">
                     <i class="fas fa-angle-right"></i>
@@ -117,7 +117,7 @@
                   </div>
                   <div class="mr-5">Post</div>
                 </div>
-                <a class="card-footer text-white clearfix small z-1" href="src/../ListePost.php">
+                <a class="card-footer text-white clearfix small z-1" href="listePost">
                   <span class="float-left">voir plus</span>
                   <span class="float-right">
                     <i class="fas fa-angle-right"></i>
@@ -133,7 +133,7 @@
                   </div>
                   <div class="mr-5">New Post</div>
                 </div>
-                <a class="card-footer text-white clearfix small z-1" href="src/../New_Post.php">
+                <a class="card-footer text-white clearfix small z-1" href="newPost">
                   <span class="float-left">voir plus</span>
                   <span class="float-right">
                     <i class="fas fa-angle-right"></i>
@@ -149,7 +149,7 @@
                   </div>
                   <div class="mr-5">Commentaires</div>
                 </div>
-                <a class="card-footer text-white clearfix small z-1" href="src/../Commentaire.php">
+                <a class="card-footer text-white clearfix small z-1" href="commentaires">
                   <span class="float-left">voir plus</span>
                   <span class="float-right">
                     <i class="fas fa-angle-right"></i>
@@ -202,24 +202,24 @@
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="../../public/vendor/jquery/jquery.min.js"></script>
-    <script src="../../public/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../public/vendor/jquery/jquery.min.js"></script>
+    <script src="../public/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="../../public/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../public/vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Page level plugin JavaScript-->
-    <script src="../../public/vendor/chart.js/Chart.min.js"></script>
-    <script src="../../public/vendor/datatables/jquery.dataTables.js"></script>
-    <script src="../../public/vendor/datatables/dataTables.bootstrap4.js"></script>
+    <script src="../public/vendor/chart.js/Chart.min.js"></script>
+    <script src="../public/vendor/datatables/jquery.dataTables.js"></script>
+    <script src="../public/vendor/datatables/dataTables.bootstrap4.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="../../public/js/sb-admin.min.js"></script>
+    <script src="../public/js/sb-admin.min.js"></script>
 
     <!-- Demo scripts for this page-->
    
-    <script src="../../public/js/demo/datatables-demo.js"></script>
-    <script src="../../public/js/demo/chart-area-demo.js"></script>
+    <script src="../public/js/demo/datatables-demo.js"></script>
+    <script src="../public/js/demo/chart-area-demo.js"></script>
 
   </body>
 

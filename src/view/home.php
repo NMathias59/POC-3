@@ -7,21 +7,26 @@
 Acceuil
 </title>
 
+
 <!-- Bootstrap core CSS -->
-   <link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="../public/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <!-- Custom styles for this template -->
-    <link href="css/freelancer.min.css" rel="stylesheet">
+<!-- Custom fonts for this template -->
+<link href="../public/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<!-- Plugin CSS -->
+<link href="../public/vendor/magnific-popup/jquery.magnific-popup.js" rel="stylesheet" type="text/css">
+<!-- Custom styles for this template -->
+<link href="../public/css/freelancer.min.css" rel="stylesheet">
 
 
-<link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="../public/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
 <!-- Custom styles for this template -->
-<link href="css/modern-business.css" rel="stylesheet">
+<link href="../public/css/modern-business.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="../css/modern-business.css" rel="stylesheet">
 
 </head>
 
@@ -35,8 +40,7 @@ Acceuil
     require 'hader.php'; ?>	
 <!-- Page Content -->
 <div class="container"> 
-  <br>
-  <br>
+
   <!-- Page Heading/Breadcrumbs -->
   <h1 class="mt-4 mb-3">ACCEUIL </h1>
   <div class="row">
@@ -77,11 +81,12 @@ Acceuil
 </div>
 </div>
 <br>
+<br>
 <!-- /.footer--> 
 <?php
         require 'footer.php'; ?>
 
 <!-- Bootstrap core JavaScript --> 
-<script src="vendor/jquery/jquery.min.js"></script> 
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../vendor/jquery/jquery.min.js"></script> 
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>

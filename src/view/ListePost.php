@@ -13,18 +13,18 @@
 
 	<!-- Bootstrap core CSS-->
     
-    <link href="../../public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../public/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template-->
-    <link href="../../public/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="../public/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
     <!-- Page level plugin CSS-->
     <link href="../vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
-    <link href="../../public/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+    <link href="../public/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
 
     <!-- Custom styles for this template-->
     <link href="../css/sb-admin.css" rel="stylesheet">
-    <link href="../../public/css/sb-admin.css" rel="stylesheet">
+    <link href="../public/css/sb-admin.css" rel="stylesheet">
 
 </head>
 
@@ -83,10 +83,10 @@
 
 
 				<div class="dropdown-menu" aria-labelledby="pagesDropdown">
-					<a class="dropdown-item" href="src/../message.php">Messages :</a>
-					<a class="dropdown-item" href="src/../ListePost.php">Post :</a>
-					<a class="dropdown-item" href="src/../New_Post.php">New Post :</a>
-					<a class="dropdown-item" href="src/../Commentaire.php">Commentaires :</a>
+				<a class="dropdown-item" href="message">Messages :</a>
+           		 <a class="dropdown-item" href="listePost">Post :</a>
+            	<a class="dropdown-item" href="newPost">New Post :</a>
+			      <a class="dropdown-item" href="commentaires">Commentaires :</a>
 				</div>
 			</li>
 		</ul>
@@ -104,11 +104,14 @@
 				</ol>
 
 				<!-- DataTables Example -->
+	
 				<div class="card mb-3">
 					<div class="card-header">
 						<i class="fas fa-table"></i> Liste des messages </div>
 					<div class="card-body">
 						<div class="table-responsive">
+						<?php foreach ($posts as $post) {
+    ?>
 							<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
 								<thead>
 									<tr>
@@ -118,19 +121,21 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>billet simple pour l'alaska ChapV</td>
-										<td>22/11/18</td>
+										<td> 	<?= $post['name']; ?> </td>
+										<td> 	<?= $post['createdAt']; ?></td>
 										<td><button type="button" class="btn btn-primary">Lire </button> 
-										<button type="button" class="btn btn-success">Editer</button>
+										<button type="button" class="btn btn-success" href="modifier">Editer</button>
 											<button type="button" class="btn btn-danger">Supprimer </button>
 										</td>
 									</tr>
 
 								</tbody>
 							</table>
+							<?php
+} ?>
 						</div>
 					</div>
-					<div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+					
 				</div>
 
 			</div>
@@ -145,6 +150,7 @@
 				</div>
 			</div>
 		</footer>
+
 
 	</div>
 	<!-- /.content-wrapper -->

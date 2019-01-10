@@ -4,29 +4,29 @@
 <meta charset="utf-8">
 <title>Document sans titre</title>
 	<!-- Bootstrap core CSS -->
-   <link href="../../public/css/bootstrap.min.css" rel="stylesheet">
+   <link href="../public/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="../../public/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="../public/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <!-- Plugin CSS -->
-	 <link href="../../public/vendor/magnific-popup/jquery.magnific-popup.js" rel="stylesheet" type="text/css">
+	 <link href="../public/vendor/magnific-popup/jquery.magnific-popup.js" rel="stylesheet" type="text/css">
     <!-- Custom styles for this template -->
-    <link href="../../public/css/freelancer.min.css" rel="stylesheet">
+    <link href="../public/css/freelancer.min.css" rel="stylesheet">
 
 
 <link href="../public/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
 <!-- Custom styles for this template -->
-<link href="../../public/css/modern-business.css" rel="stylesheet">
+<link href="../public/css/modern-business.css" rel="stylesheet">
 </head>
 
 <body>
 	<!-- header -->
 	<?php
-	require( 'hader.php' );
-	?>
+    require 'hader.php';
+    ?>
 	
 	<!-- Contact-->
 	<section id="contact">

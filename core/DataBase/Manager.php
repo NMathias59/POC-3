@@ -16,7 +16,7 @@ abstract class Manager
     private static function dbConnect()
     {
         if (self::$dataBase === null) {
-            self::$dataBase = new PDO('mysql:host=localhost;dbname=projet;charset=utf8', 'root', 'root');
+            self::$dataBase = new PDO('mysql:host=localhost;dbname=projet;charset=utf8', 'root', 'root', [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
         }
     }
 }

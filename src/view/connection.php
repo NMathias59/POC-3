@@ -47,24 +47,24 @@
             <div class="form-group">
               <div class="form-label-group">
                 <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="required" autofocus="autofocus">
-                <label for="inputEmail"></label>
+                <label for="inputEmail" name="login" ></label>
               </div>
             </div>
             <div class="form-group">
               <div class="form-label-group">
                 <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="required">
-                <label for="inputPassword"></label>
+                <label for="inputPassword" name="password"></label>
               </div>
             </div>
             <div class="form-group">
               <div class="checkbox">
               </div>
             </div>
-            <a class="btn btn-primary btn-block" href="index.html">Login</a>
+            <button class="btn btn-primary btn-block">Login</button>
           </form>
           <div class="text-center">
             <a class="d-block small mt-3" href="register.html"></a>
-            <a class="d-block small" href="forgot-password.html">Forgot Password?</a>
+            
           </div>
         </div>
       </div>

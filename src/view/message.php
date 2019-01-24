@@ -120,15 +120,18 @@
 									</tr>
 								</thead>
 								<tbody>
+								<?php foreach ($messages as $message) {
+    ?>
 									<tr>
-										<td>Tiger Nixon</td>
-										<td>N.Tiger@yolo.fr</td>
-										<td>098945355</td>
+										<td><?= $message['name']; ?></td>
+										<td><?= $message['email']; ?></td>
+										<td><?= $message['phone']; ?></td>
 										<td><button type="button" class="btn btn-primary">Lire</button> <button type="button" class="btn btn-danger">Supprimer</button>
 										</td>
-										<td>02/11/2018</td>
+										<td><?= $message['createdAt']; ?></td>
 									</tr>
-
+								<?php
+} ?>
 								</tbody>
 							</table>
 						</div>

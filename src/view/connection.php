@@ -46,21 +46,21 @@
           <form>
             <div class="form-group">
               <div class="form-label-group">
-                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="required" autofocus="autofocus">
-                <label for="inputEmail" name="login" ></label>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="required" autofocus="autofocus" name="login">
+                <label for="inputEmail"  ></label>
               </div>
             </div>
             <div class="form-group">
               <div class="form-label-group">
-                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="required">
-                <label for="inputPassword" name="password"></label>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="required" name="password">
+                <label for="inputPassword"></label>
               </div>
             </div>
             <div class="form-group">
               <div class="checkbox">
               </div>
             </div>
-            <button class="btn btn-primary btn-block">Login</button>
+            <button class="btn btn-primary btn-block" name="©">Login</button>
           </form>
           <div class="text-center">
             <a class="d-block small mt-3" href="register.html"></a>

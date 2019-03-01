@@ -26,7 +26,7 @@
 
 	<!-- header -->
 	<?php
-    require 'hader.php'; ?>
+    require 'header.php'; ?>
 
 	<!-- Page Content -->
 	<div class="container">

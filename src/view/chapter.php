@@ -30,7 +30,7 @@
 
 	<!-- Navigation -->
 	<?php
-    require 'hader.php'; ?>
+    require 'header.php'; ?>
 
 	<!-- Page Content -->
 <main>
@@ -53,9 +53,10 @@
 				<div class="card h-100">
 					<div class="card-body">
 						<h4 class="card-title">
-                			<a href="#"><?= $post['name']; ?></a>
+							<?php //var_dump($post);?>
+                			<a href="#"><?= $post->getName(); ?></a>
               			</h4>
-						<p class="card-text"><?= $post['content']; ?></p>
+						<p class="card-text"><?= $post->getContent(); ?></p>
 						<button type="button" class="btn btn-primary">voir plus</button>
 					</div>
 				</div>

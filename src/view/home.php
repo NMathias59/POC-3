@@ -37,7 +37,7 @@ Acceuil
 
 <!-- header -->
 <?php
-    require 'hader.php'; ?>	
+    require 'header.php'; ?>	
 <!-- Page Content -->
 <div class="container"> 
 
@@ -50,11 +50,11 @@ Acceuil
     <div class="col-lg-6 portfolio-item">
       <div class="card h-100"> 
         <div class="card-body">
-          <h4 class="card-title"> <a><?= $posts[$i]['name']; ?></a> </h4>
-          <span> <?=  $posts[$i]['createdAt']; ?> </span>
+          <h4 class="card-title"> <a><?= $posts[$i]->getName(); ?></a> </h4>
+          <span> <?=  $posts[$i]->getCreatedAt(); ?> </span>
         <br/>
         <br/>
-          <p class="card-text"><?= $posts[$i]['content']; ?> </p>
+          <p class="card-text"><?= $posts[$i]->getContent(); ?> </p>
 <button type="button" class="btn btn-primary">lire la suite</button>
         </div>
       </div>
@@ -68,9 +68,9 @@ Acceuil
         ?> 
       <div class="row">
       <div>
-        <h3><?= $posts[$i]['name']; ?></h3>
-        <span><?=  $posts[$i]['createdAt']; ?></span>
-        <p><?= $posts[$i]['content']; ?> </p>
+        <h3><?= $posts[$i]->getName(); ?></h3>
+        <span><?=  $posts[$i]->getCreatedAt(); ?></span>
+        <p><?= $posts[$i]->getContent(); ?></p>
         <a class="btn btn-primary" href="#">Lire la suite <span class="glyphicon glyphicon-chevron-right"></span> </a> </div>
     </div>
     

@@ -2,15 +2,14 @@
 
 namespace App\Controller;
 
-use App\Model\PostManager;
+use App\Model\Manager\PostManager;
 
 class ChapitreController
 {
     public function chapitrePageAction()
     {
-        $postManagerChapitres = new PostManager();
-        $posts = $postManagerChapitres->getPost2();
-        require '../src/view/chapitres.php';
+        $ChapterByPage = new PostManager();
+        $posts = $ChapterByPage->getPostsByPage($_POST['page'] ?? 1);
+        require '../src/view/chapter.php';
     }
 }
-//ChapitresController::chapitrePageAction();

@@ -1,11 +1,23 @@
 <?php
 
-class Post
+namespace App\Model\Entity;
+
+class Message
 {
     private $id;
-    private $name;
+    private $createdBy;
     private $createdAt;
     private $content;
+
+    public function __construct($data = null)
+    {
+        if ($data) {
+            $this->setId($data->id);
+            $this->setCreatedby($data->name);
+            $this->setCreatedAt($data->createdAt);
+            $this->setContent($data->content);
+        }
+    }
 
     public function getId()
     {
@@ -17,14 +29,14 @@ class Post
         $this->id = $id;
     }
 
-    public function getName()
+    public function getcreatedBy()
     {
-        return $this->name;
+        return $this->createdBy;
     }
 
-    public function setName($name)
+    public function createdBy($createdBy)
     {
-        $this->name = $name;
+        $this->createdBy = $createdBy;
     }
 
     public function getCreatedAt()

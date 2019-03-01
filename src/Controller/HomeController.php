@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-use App\Model\PostManager;
+use App\Model\Manager\PostManager;
 
 class HomeController
 {

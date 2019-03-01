@@ -34,7 +34,7 @@
 
     <!-- Navigation -->
     <?php
-    require 'hader.php'; ?>
+    require 'header.php'; ?>
 
     <!-- Header -->
     <header class="masthead bg-primary text-white text-center">

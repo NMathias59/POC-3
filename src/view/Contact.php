@@ -25,7 +25,7 @@
 <body>
 	<!-- header -->
 	<?php
-    require 'hader.php';
+    require 'header.php';
     ?>
 	
 	<!-- Contact-->

@@ -34,14 +34,13 @@
         'controller' => 'Connection',
         'action' => 'connectionPage',
         'name' => 'connection',
-        'method' => 'GET',
     ],
     [
         'uri' => '/contact',
         'controller' => 'Contact',
         'action' => 'contactPage',
         'name' => 'contact',
-        'method' => 'GET',
+
     ],
     [
         'uri' => '/post',
@@ -69,7 +68,6 @@
         'controller' => 'MessagePost',
         'action' => 'listeMessagePage',
         'name' => 'messages',
-        'method' => 'GET',
     ],
     [
         'uri' => '/newPost',

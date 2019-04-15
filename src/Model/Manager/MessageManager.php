@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Model;
+namespace App\Model\Manager;
 
 use Core\DataBase\Manager;
 use App\Model\Entity\Message;

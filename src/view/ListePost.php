@@ -32,7 +32,7 @@
 
 	<nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-		<a class="navbar-brand mr-1" href="index.html">Administration :</a>
+		<a class="navbar-brand mr-1" href="administration">Administration :</a>
 
 		<button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
         <i class="fas fa-bars"></i>
@@ -98,7 +98,7 @@
 				<!-- Breadcrumbs-->
 				<ol class="breadcrumb">
 					<li class="breadcrumb-item">
-						<a href="src/../administration.php">Acceuil</a>
+						<a href="administration">Acceuil</a>
 					</li>
 					<li class="breadcrumb-item active">Post </li>
 				</ol>
@@ -121,8 +121,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td> 	<?= $post['name']; ?> </td>
-										<td> 	<?= $post['createdAt']; ?></td>
+										<td> 	<?= $post->getName(); ?> </td>
+										<td> 	<?=  $post->getCreatedAt(); ?> </td>
 										<td><button type="button" class="btn btn-primary">Lire </button> 
 										<button type="button" class="btn btn-success" href="modifier">Editer</button>
 											<button type="button" class="btn btn-danger">Supprimer </button>

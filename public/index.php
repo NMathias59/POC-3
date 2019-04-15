@@ -17,7 +17,7 @@ foreach ($routes as $route) {
         $router->get($route['uri'], $route['controller'].'#'.$route['action'], $route['name']);
     }
     if (empty($route['method']) || $route['method'] == 'POST') {
-        $router->get($route['uri'], $route['controller'].'#'.$route['action'], $route['name']);
+        $router->post($route['uri'], $route['controller'].'#'.$route['action'], $route['name']);
     }
 }
 

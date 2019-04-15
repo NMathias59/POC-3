@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-use App\Model\MessageManager;
+use App\Model\Manager\MessageManager;
 
 class MessagePostController
 {

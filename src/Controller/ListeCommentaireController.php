@@ -6,6 +6,6 @@ class ListeCommentaireController
 {
     public function listeCommentairePageAction()
     {
-        require '../src/view/commentaire.php';
+        require '../src/view/comment.php';
     }
 }

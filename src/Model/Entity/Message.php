@@ -8,6 +8,7 @@ class Message
     private $createdBy;
     private $createdAt;
     private $content;
+    private $email;
 
     public function __construct($data = null)
     {
@@ -16,6 +17,7 @@ class Message
             $this->setCreatedby($data->name);
             $this->setCreatedAt($data->createdAt);
             $this->setContent($data->content);
+            $this->setEmail($data->email);
         }
     }
 
@@ -29,12 +31,12 @@ class Message
         $this->id = $id;
     }
 
-    public function getcreatedBy()
+    public function getCreatedBy()
     {
         return $this->createdBy;
     }
 
-    public function createdBy($createdBy)
+    public function setCreatedBy($createdBy)
     {
         $this->createdBy = $createdBy;
     }
@@ -57,5 +59,19 @@ class Message
     public function setContent($content)
     {
         $this->content = $content;
+    }
+
+    
+    public function getEmail()
+    {
+        return $this->email;
+    }
+
+    
+    public function setEmail($email)
+    {
+        $this->email = $email;
+
+        return $this;
     }
 }

@@ -24,9 +24,19 @@ class LoginManager extends Manager
 
     public function loginUser($login, $password)
     {
-        $requete = self::$dataBase->prepare('SELECT * FROM `admin` WHERE `login` = :login AND `password` = :password ');
-        $requete->execute(array('login' => $login, 'password' => password_hash($password, PASSWORD_DEFAULT)));
+        $requete = self::$dataBase->prepare('SELECT * FROM `admin` WHERE `login` = :login');
+        $requete->execute(array('login' => $login ));
+        //var_dump(password_hash($password, PASSWORD_DEFAULT));
+        $user = $this->hydrate( $requete->fetch());
+        var_dump($user);
+        if(password_verify($password, $user-> getPassword()))
+        {
+            return $user;
+        }
+        return null;
+    }
 
-        return $requete->fetch();
+    public function verifyConnection(){
+        //$_SESSION
     }
 }

@@ -2,21 +2,24 @@
 
 namespace App\Controller;
 
-use App\Model\LoginManager;
+use App\Model\Manager\LoginManager;
 
 class ConnectionController
 {
     public function connectionPageAction()
-    {
-        if ($_POST['formLogin']) {
+    {var_dump($_SERVER['REQUEST_METHOD']);
+        if ($_SERVER['REQUEST_METHOD'] ==='POST') {
             $loginManager = new LoginManager();
             $user = $loginManager->loginUser($_POST['login'], $_POST['password']);
+            var_dump($user);
             if ($user) {
-                header('Locations : ../view/administration.php');
+                header('Location: administration');
             } else {
-                require '../../public/js/erreur _log.js';
+                echo('erreur');
+                die();
             }
         }
         require '../src/view/connection.php';
     }
 }
+

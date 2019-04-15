@@ -35,7 +35,7 @@
   <body class="bg-dark">
 
   <?php
-    require 'hader.php'; ?>
+    require 'header.php'; ?>
 
 	  <!-- login -->
 	  
@@ -43,7 +43,7 @@
       <div class="card card-login mx-auto mt-5">
         <div class="card-header">Login</div>
         <div class="card-body">
-          <form>
+          <form method="POST">
             <div class="form-group">
               <div class="form-label-group">
                 <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="required" autofocus="autofocus" name="login">
@@ -52,7 +52,7 @@
             </div>
             <div class="form-group">
               <div class="form-label-group">
-                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="required" name="password">
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="required" name="password" method="POST">
                 <label for="inputPassword"></label>
               </div>
             </div>

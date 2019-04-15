@@ -123,12 +123,12 @@
 								<?php foreach ($messages as $message) {
     ?>
 									<tr>
-										<td><?= $message['name']; ?></td>
-										<td><?= $message['email']; ?></td>
-										<td><?= $message['phone']; ?></td>
+										<td> <?= $message->getCreatedby();?>;</td>
+										<td><?= $message->getEmail();?> </td>
+										<td><?= $message->getContent();?></td>
 										<td><button type="button" class="btn btn-primary">Lire</button> <button type="button" class="btn btn-danger">Supprimer</button>
 										</td>
-										<td><?= $message['createdAt']; ?></td>
+										<td><?= $message->getCreatedAt();?></td>
 									</tr>
 								<?php
 } ?>
